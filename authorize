@@ -1,0 +1,1 @@
+curl -s -X POST -d "username=$CDN_USERNAME&password=$CDN_PASSWORD" https://api.cdnvideo.ru/app/oauth/v1/token/ | jq -r '.token' > .token

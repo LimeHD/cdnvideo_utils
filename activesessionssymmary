@@ -1,0 +1,2 @@
+TOKEN=`cat .token`
+curl -H "cdn-auth-token: $TOKEN" https://api.cdnvideo.ru/app/streamstat/v1/accounts/$CDN_ACCOUNT/activesessionsummary
