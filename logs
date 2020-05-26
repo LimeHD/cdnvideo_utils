@@ -1,0 +1,4 @@
+TOKEN=`cat .token`
+STARTDATE='2020-05-01T00:00:00Z'
+ENDDATE='2020-05-02T00:00:00Z'
+curl -v -s -H "cdn-auth-token: $TOKEN" "https://api.cdnvideo.ru/app/logs/v1/accounts/$CDN_ACCOUNT_LOGS/get?startdate=$STARTDATE&enddate=$ENDDATE" --output ./cdn.log.gz
